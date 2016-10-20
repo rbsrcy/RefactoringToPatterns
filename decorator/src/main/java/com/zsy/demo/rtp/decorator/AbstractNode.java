@@ -4,6 +4,9 @@ package com.zsy.demo.rtp.decorator;
  * Created by zhuoshangyi on 2016/10/6.
  */
 public class AbstractNode implements Node {
+    private int nodeBegin;
+    private int nodeEnd;
+
     @Override
     public String toPlainTestString() {
         return null;
@@ -47,5 +50,21 @@ public class AbstractNode implements Node {
     @Override
     public CompositeTag getParent() {
         return null;
+    }
+
+    public int getNodeBegin() {
+        return nodeBegin;
+    }
+
+    public void setNodeBegin(int nodeBegin) {
+        this.nodeBegin = nodeBegin;
+    }
+
+    public int getNodeEnd() {
+        return nodeEnd;
+    }
+
+    public void setNodeEnd(int nodeEnd) {
+        this.nodeEnd = nodeEnd;
     }
 }
